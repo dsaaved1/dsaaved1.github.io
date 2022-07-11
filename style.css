@@ -38,7 +38,8 @@ nav img{
     margin-left: 1em;
     margin-top: 0.365em;
     width: 2.26em;
-    height: 3.27;
+    height: 3.27em;
+    float: left;
 }
 
 .sociallink{
@@ -136,6 +137,7 @@ nav img{
   #selfie{
     display: inline-block;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
   }
