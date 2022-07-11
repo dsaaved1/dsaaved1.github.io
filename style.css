@@ -57,7 +57,7 @@ nav img{
   
   .mission {
     display: flex;
-    height: 300px;
+    height: 600px;
     background-image: url("https://codecademy-content.s3.amazonaws.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg");
     padding-top: 35px;
     background-size: cover;
@@ -135,8 +135,7 @@ nav img{
   }
 
   #selfie{
-    display: inline-block;
-    border-radius: 50%;
+    border-radius: 20%;
     margin-left: auto;
     margin-right: auto;
     width: 5em;
