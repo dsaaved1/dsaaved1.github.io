@@ -1,0 +1,30 @@
+nav{
+    display: block;
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 6px 22px -9px rgb(0 0 0 / 75%);
+}
+
+nav img{
+    display: inline-block;
+}
+
+.navlogo{
+    margin-left: 1em;
+    margin-top: 0.365em;
+    width: 2.26em;
+    height: 3.27;
+}
+
+.sociallink{
+    width: 2em;
+    height: 2em;
+    float: right;
+    margin-right: 1em;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+
