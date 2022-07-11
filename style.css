@@ -47,7 +47,6 @@ nav img{
     float: right;
     margin-right: 1em;
     margin-top: 1em;
-    display: inline-block;
 }
 
 .main {
@@ -130,6 +129,6 @@ nav img{
     padding-top: 20px;
   }
   
-  h2#team{
+  h2 #team{
     margin-top: 20px;
   }
