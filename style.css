@@ -57,8 +57,8 @@ nav img{
   
   .mission {
     display: flex;
-    height: 600px;
-    background-image: url("https://codecademy-content.s3.amazonaws.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg");
+    height: 650px;
+    background-image: url("/images/skyscrapers.jpeg");
     padding-top: 35px;
     background-size: cover;
   }
@@ -104,7 +104,7 @@ nav img{
   }
   
   .team {
-    background-image: url("https://codecademy-content.s3.amazonaws.com/PRO/independent-practice-projects/flexbox-business-site/img/blurred-road.jpg");
+    background-image: url("./images/house.jpeg");
     padding-top: 70px;
     padding-top: 5px;
     display: flex;
