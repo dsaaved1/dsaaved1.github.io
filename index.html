@@ -1,105 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MP1</title>
+        <link href="https://fonts.googleapis.com/css?family=Lexend+Mega" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/main.scss" type="text/css">
+        <link rel="shortcut icon" href="assets/images/icon.ico" type="image/x-icon">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"  />
+
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <nav id="navbar">
+          
+            <ul> 
+              <li class="logo">
+                <img id="logo" src="assets/images/illinois.png">
+              </li>
+                <li><a href="#mission">Info</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects-container">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+              </ul>
+         </nav>
     
-<head>
-    <title>Diego Web</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lexend+Mega" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <nav>
-        <img class="navlogo" src="./images/illinois.png">
-        <a href="https://github.com/dsaaved1">
-            <img class="sociallink"  src="./images/github.svg">
-        </a>
-        <a href="https://www.linkedin.com/in/diegoas2/">
-            <img class="sociallink"  src="./images/linkedin.svg" >
-        </a>
-    </nav>
-
-    <div class='main'>
-
-        <div id='mission' class="mission">
-          <div class="content">
-            <h2>DIEGO SAAVEDRA</h2>
-            <div>
-                <img id="selfie" src="./images/selfie.jpg">
-            </div>
-            <h4>Computer Science Student</h4>
-            <h4>University of Illinois at Urbana-Champaign</h4>
-          </div>
-        </div>
+        <div class='main'>
     
-        <div id="portfolio">
-          <div class="content">
-            <h2>RESUME & PORTAFOLIO</h2>
-            <h4>The links provided below are my current resume and profiles on LinkedIn, Handshake, and GitHub.</h4>
-            <div class="companies">
-              <div class="company">
-                <img src="./images/resume.svg"/>
-                <a href="./documents/resume.pdf">
-                    <span>Resume</span>
-                </a>
+            <section id='mission' class="mission">
+              <div class="content">
+                <h2>DIEGO SAAVEDRA</h2>
+                <div>
+                    <img id="selfie" src="assets/images/selfie.jpg">
+                </div>
+                <h4>Computer Science Student</h4>
+                <h4>University of Illinois at Urbana-Champaign</h4>
               </div>
-              <div class="company">
-                <img src="./images/linkedin.svg"/>
-                <a href="https://www.linkedin.com/in/diegoas2/">
-                    <span>LinkedIn</span>
-                </a>
+            </section>
+        
+            <section id="portfolio" class="section">
+              <div class="content">
+                <h2>Portfolio</h2>
+                <h4>The links provided below are my current resume and profiles on LinkedIn, Handshake, and GitHub.</h4>
+                <div class="companies">
+                  <div class="company">
+                    <img src="assets/images/resume.svg"/>
+                    <a href="assets/RESUME.pdf">
+                        <span>Resume</span>
+                    </a>
+                  </div>
+                  <div class="company">
+                    <img src="assets/images/linkedin.svg"/>
+                    <a href="https://www.linkedin.com/in/diegoas2/">
+                        <span>LinkedIn</span>
+                    </a>
+                  </div>
+                  <div class="company">
+                    <img src="assets/images/handshake.svg"/>
+                    <a href="https://illinois.joinhandshake.com/stu/users/41874314?enter_approval_state=true">
+                        <span>Handshake</span>
+                    </a>
+                  </div>
+                  <div class="company">
+                    <img src="assets/images/github.svg"/>
+                    <a href="https://github.com/dsaaved1">
+                        <span>GitHub</span>
+                    </a>  
+                  </div>
               </div>
-              <div class="company">
-                <img src="./images/handshake.svg"/>
-                <a href="https://illinois.joinhandshake.com/stu/users/41874314?enter_approval_state=true">
-                    <span>Handshake</span>
-                </a>
+            </section>
+            
+            <section id="skills"  class="carousel-container">
+              <h2>Skills</h2>
+              <div class="carousel-arrow left" onclick="prevSlide()">❮</div>
+              <div class="carousel-track" id="carousel-track">
+                <div class="carousel-item">
+                  <p>I excel in creating polished mobile apps with login authentication, real-time messaging, and other complex features using React Native.</p> 
+                  <img src="assets/images/mobile.svg" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                  <p>I have expertise in building polished websites from design to product using JavaScript.</p> 
+                  <img src="assets/images/web.svg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                  <p>I have strong skills in Java development, working with databases, and creating robust applications.</p>
+                  <img src="assets/images/database.svg" alt="Slide 3">
+                </div>
               </div>
-              <div class="company">
-                <img src="./images/github.svg"/>
-                <a href="https://github.com/dsaaved1">
-                    <span>GitHub</span>
-                </a>  
+              <div class="carousel-arrow right" onclick="nextSlide()">❯</div>
+            </section>
+        
+            <section id="projects-container" class="section">
+              <h2 id='projects'>Projects</h2>
+              <div class="projects">
+                <div class="project" onclick="openModal('Doggy Match', 'Tinder for dogs (where dog owners can find partners for their dogs). Utilized Android Studio and Spring Boot as the front-end and back-end frameworks, Mockito for effective unit testing, and MySQL for user data storage')">
+                  <img src="assets/images/doggymatch.png" alt="Doggy Match">
+                  <h3>Doggy Match</h3>
+                  <p>Tinder for dogs (where dog owners can find partners for their dogs)</p>
+                  <div class="search-icon"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="project" onclick="openModal('ProCards', 'Developed a Poker game that can be played in multiplayer mode, against the computer with levels of increasing difficulty, and with time limits. Programmed the backend through Python and Bash scripts.')">
+                  <img src="assets/images/procards.jpeg" alt="ProCards">
+                  <h3>ProCards</h3>
+                  <p>Play poker with the computer and get better by increasing the difficulty.</p>
+                  <div class="search-icon"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="project" onclick="openModal('HelloAI', 'Ask any question to AI while also chatting with your friends. An AI-integrated secure chat application, that enables real-time messaging using GetStream, AWS for secure user authentication, and OpenAI API for instant responses and enhanced collaboration.')">
+                  <img src="assets/images/quotetrivia.jpeg" alt="QuoteTrivia">
+                  <h3>Social AI</h3>
+                  <p>Ask any question to AI while also chatting with your friends.</p>
+                  <div class="search-icon"><i class="fas fa-search"></i></div>
+                </div>
               </div>
-          </div>
-        </div>
-    
-        <div id="team-container">
-          <h2 id='team'>PROJECTS</h2>
-          <div class="team">
-            <div class="teammate">
-              <img src="images/doggymatch.png" />
-              <h3>Doggy Match</h3>
-              <p>Tinder for dogs (where dog owners can find partners for their dogs)</p>
+          </section>
+            
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+      
+              </div>
             </div>
-            <div class="teammate">
-                <img src="/images/procards.jpeg" />
-              <h3>ProCards</h3>
-              <p>Play poker with the computer and get better by increasing the difficulty.</p>
-            </div>
-            <div class="teammate">
-                <img src="./images/quotetrivia.jpeg" />
-              <h3>QuoteTrivia</h3>
-              <p>Test your knowledge of several famous quotes on a trivia game.</p>
-            </div>
-          </div>
-        </div>
-    
-          <div class="contact">
-            <h2>Contact Info</h2>
-            <h5>diegoas2@illinois.edu</h5>
-            <h5>515-815-2546</h5>
-          </div>
-    
-          <div class="copyright">
-            <h5>Organized by Diego Saavedra</h5>
-          </div>
-    
-        </div>
-      </div>
 
-</body>
-
+            <section id="videos" class="section">
+              <div class="section-content">
+          
+                <div class="video-container">
+                  <video class="video-player" autoplay muted loop>
+                    <source src="assets/images/videoo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="video-overlay">
+                    <p class="fade-in fade-out transition"> "Knowledge is Power"</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+              <section id="contact" class="contact" >
+                <h2><i class="fas fa-address-card"></i> Contact Info</h2>
+                <h5><i class="fas fa-envelope"></i> diegoas2@illinois.edu</h5>
+                <h5><i class="fas fa-phone"></i> 515-815-2546</h5>
+                <h5><i class="fas fa-user"></i> Developed by Diego Saavedra</h5>
+              </section>
+        
+         
+            </div>
+          </div>
+    </body>
 </html>
+
 
 
