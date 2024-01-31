@@ -126,7 +126,7 @@ document.getElementById('waitlist-form').addEventListener('submit', function(eve
   event.preventDefault();
   var email = document.getElementById('waitlist-email').value;
   // Here you would typically send the email to your server for processing, but for this example, we'll just show a message
-  document.getElementById('waitlist-message').textContent = 'Email ' + email + ' saved. We will let you know when we are published.';
+  document.getElementById('waitlist-message').textContent = 'Thank you! Email ' + email + ' has been saved. We will notify you once the app is published.';
   
   // Clear the input field after submission
   document.getElementById('waitlist-email').value = '';

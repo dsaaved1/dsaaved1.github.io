@@ -173,7 +173,7 @@ nav a.active {
 }
 
 .carousel-item img {
-  width: 40%;
+  width: 20%;
   height: auto;
   object-fit: cover; 
 }
