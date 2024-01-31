@@ -107,13 +107,16 @@ window.addEventListener('resize', updateCarousel);
 window.addEventListener('load', updateCarousel);
 
 
-function openModal(title, description) {
+function openModal(title, description, demoUrl) {
   const modal = document.getElementById('myModal');
   const modalTitle = document.getElementById('modal-title');
   const modalDescription = document.getElementById('modal-description');
+  const modalDemoLink = document.getElementById('modal-demo-link');
+
   modal.style.display = 'flex';
   modalTitle.innerText = title;
   modalDescription.innerText = description;
+  modalDemoLink.href = demoUrl;
 }
 
 function closeModal() {
