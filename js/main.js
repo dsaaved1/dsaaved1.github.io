@@ -120,3 +120,10 @@ function closeModal() {
   const modal = document.getElementById('myModal');
   modal.style.display = 'none';
 }
+
+document.getElementById('waitlist-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  var email = document.getElementById('waitlist-email').value;
+  // Here you would typically send the email to your server for processing, but for this example, we'll just show a message
+  document.getElementById('waitlist-message').textContent = 'Email ' + email + ' saved. We will let you know when we are published.';
+});
